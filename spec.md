@@ -2,55 +2,57 @@
 
 ## **Overview**
 The user management screen allows administrators to view, add, edit and delete user information. The screen is divided into two sections: the left section displays a table of existing users, and the right section provides a form for adding or editing user information.
+
+---
+
 ## **UI Components** 
 ## Buttons
-•	New User: This button allows administrators to create a new user. It is located in the upper left corner of the screen and is colored blue.
-
-•	Hide Disabled User: This checkbox allows administrators to hide disabled users from the table. It is located just to the right of the New User button.
-
-•	Save User: This button saves any changes made to user information. It is located in the upper right corner of the screen and is colored pale blue.
+* New User Button: Located in the left upper corner of the screen, a blue button that opens a new user form for user creation.
+* Hide Disabled User Checkbox: Located just right to the "New User" button. It allows the user to toggle the display of disabled users in the user list.
+* Save User Button: Located in the right upper corner of the screen, a pale blue button that saves changes made to the user accoun
 
 ## Table
-•	ID: This column displays a unique identifier for each user.
-
-•	User Name: This column displays the user's username.
-
-•	Email: This column displays the user's email address.
-
-•	Enabled: This column displays whether the user's account is enabled or disabled.
+* ID: This column displays a unique identifier for each user.
+* User Name: This column displays the user's username
+* Email: This column displays the user's email address.
+* Enabled: This column displays whether the user's account is enabled or disabled.
+* User List Table: Displays a list of all user accounts with columns for ID, User Name, Email, and Enabled. Users can sort and filter the list by clicking on column headers.
 
 ## Form
-•	Username: This field allows administrators to enter a unique username for the new user.
+* Username Field: A text input field for the user to enter a unique username for the new user account.
+* Display Name Field: A text input field for the user to enter a display name for the new user account.
+* Phone Field: A text input field for the user to enter a phone number for the new user account.
+* Email Field: A text input field for the user to enter an email address for the new user account.
+* User Roles Field: A dropdown list with three options for user roles: Guest, Admin, and SuperAdmin.
+* Enabled Checkbox: A checkbox for the user to enable or disable the user account.
 
+## **User Interface Behavior**
+**User List**
+* The user list is displayed by default when the user opens the User Management Screen.
+* Users can sort the list by clicking on the column headers for ID, User Name, Email, or Enabled.
+* Users can filter the list by enabling or disabling the "Hide Disabled Users" checkbox.
 
-•	Display Name: This field allows administrators to enter the name that will be displayed for the user.
+**User Form**
+* The user form is displayed when the user clicks on the "New User" button.
+* When the user submits the form by clicking the "Save User" button, a new user account is created with the provided information.
+* The user form is cleared and closed when the new user account is successfully created.
+* If any required fields are missing or invalid, an error message is displayed to the user.
 
-•	Phone: This field allows administrators to enter the phone number of the user.
+## **Initial Display**
+The initial display of the User Management Screen shows the user list with the following two example user accounts:
 
-•	Email: This field allows administrators to enter the email address of the user.
+| ID | User Name | Email | Enabled |  
+| -------------- | -------------- | -------------- |-------------- |
+| 1 | AdminUser | admin@piworks.net | true |
+| 2 | Test User | testuser@piworks.net | true |
 
-•	User Roles: This field allows administrators to assign a role to the new user. Three roles are available: Guest, Admin, and SuperAdmin.
-
-•	Enabled: This checkbox allows administrators to enable or disable the user's account.
-
-## **User Interaction**
-
-## Viewing Users
-When the user management screen is first displayed, the table on the left side of the screen will display all existing users. The user's ID, username, email address, and whether their account is enabled or disabled will be displayed.
-If the Hide Disabled User checkbox is checked, any disabled users will be hidden from the table.
-
-## Adding Users
-
-To add a new user, the administrator should click the New User button in the upper left corner of the screen. This will display a form on the right side of the screen. The administrator should then fill in the fields for the new user's information, including a unique username, display name, phone number, email address, role, and whether the account is enabled or disabled.
-Once all fields have been filled in, the administrator can click the Save User button in the upper right corner of the screen to save the new user information.
-
-## Editing Users
-To edit an existing user's information, the administrator should click on the user's row in the table on the left side of the screen. This will display the user's information in the form on the right side of the screen. The administrator can then edit any of the fields in the form.
-Once the changes have been made, the administrator should click the Save User button in the upper right corner of the screen to save the updated user information.
-## Deleting Users
-To delete an existing user, the administrator should click on the user's row in the table on the left side of the screen. This will highlight the row in red. The administrator can then click the Delete button that appears to delete the user.
+The "New User" button, "Hide Disabled Users" checkbox, and "Save User" button are also displayed.
 
 ---
 
 ## **Conclusion**
-The user management screen allows administrators to view, add, edit, and delete user information. The screen is divided into two sections: the left section displays a table of existing users, and the right section provides a form for adding or editing user information. By following the guidelines outlined in this document, software developers can create a user-friendly and effective user management screen.
+In conclusion, this document provides a detailed specification of the User Management Screen UI components and their behavior. It includes a description of the buttons, user list, and user form, as well as their functionalities. This document will serve as a guide for software developers who will implement this user interface. It is expected that the UI will be user-friendly and intuitive, making it easier for users to manage user accounts.
+
+
+
+
